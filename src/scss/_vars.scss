@@ -1,0 +1,36 @@
+// если вы хотите использовать sass-переменные - удалите root
+// colors
+:root {
+  // base
+  --font-family: 'Proxima Nova Rg', sans-serif;
+  --content-width: 1170px;
+  --container-offset: 15px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+  --box-indent: 30px;
+  --box-indent-sm: 15px;
+
+  // colors
+  --light-color: #fff;
+  --light-gray: #F4F4F4;
+  --light-gray-2: #DFDFDF;
+  --base: #37454A;
+  --base-alpha: rgba(55, 69, 74, 0.6);
+  --green: #76B72A;
+  --green-dark: #62A53C;
+  --red: #E34C4C;
+  --gradient-green: linear-gradient(90deg, #6CB644 0%, #82CA2C 100%);
+  --gradient-green-hover: linear-gradient(90deg, #4b793a 0%, #698a44 100%);
+  --gradient-green-success: linear-gradient(90deg, #323331 0%, #181818 100%);
+  --shadow-green: 0px 10px 20px 0px rgba(132, 199, 55, 0.3);
+  --shadow-gray: 0px 4px 8px 0px rgba(0, 0, 0, 0.1);
+
+
+
+  // Font size
+  --h1: 42px;
+  --h1-lh: 50px;
+  --h1-mob: 24px;
+  --h1-lh-mob: 36px;
+  --default: 16px;
+}
+

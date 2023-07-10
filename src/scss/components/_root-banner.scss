@@ -1,0 +1,25 @@
+.root-banner {
+	background: var(--light-gray);
+
+	&__wrapper {
+		display: flex;
+		align-items: stretch;
+		justify-content: space-between;
+		align-content: center;
+	}
+
+	&__content {
+		padding-bottom: 30px;
+	}
+
+	&__img {
+		display: none;
+
+		@include tablet {
+			display: block;
+			flex: 0 0 auto;
+			margin-left: 45px;
+			max-width: 400px;
+		}
+	}
+}

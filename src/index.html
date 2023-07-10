@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+@include('partials/head.html')
+
+<body class="page__body">
+<div class="site-container">
+    @include('partials/header.html')
+    @include('partials/mob-nav-actions.html')
+    @include('partials/mobile-menu.html')
+    @include('partials/top-menu.html')
+    <main class="main">
+        @include('partials/root-banner.html')
+        @include('partials/advantages.html')
+        @include('partials/content-list.html')
+        @include('partials/content-questions.html')
+        @include('partials/slider.html')
+        @include('partials/social-box.html')
+        @include('partials/form.html')
+        <div id="callMeModal" class="is-hidden">
+            <div class="form form__modal">
+                <div class="form__field">
+                    <input type="text" class="form__input js-phone-mask" required placeholder="Номер телефона" value="">
+                </div>
+                <div class="form__field">
+                    <input type="text" class="form__input" required placeholder="Фамилия Имя" value="">
+                </div>
+                <div class="form__field form__field--button">
+                    <a href="##" class="btn btn--md btn--full-w">
+                        <span class="btn__content">Перезвоните мне</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    @include('partials/footer.html')
+</div>
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+.breadcrumbs {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	margin: 20px 0 30px;
+
+	&__link {
+		flex: 0 0 auto;
+		position: relative;
+		line-height: 22px;
+		color: var(--green);
+		text-decoration: none;
+		padding-right: 10px;
+		margin-right: 10px;
+
+		&:after {
+			position: absolute;
+			content: '';
+			left: -13px;
+			top: 6px;
+			width: 7px;
+			height: 10px;
+			opacity: .3;
+			background: url('/img/arrow-brd.svg') no-repeat center;
+			background-size: contain;
+		}
+
+		&:first-child {
+			&:after {
+				display: none;
+			}
+		}
+
+		&--home {
+			margin-top: -5px;
+			fill: none;
+			stroke: var(--green);
+		}
+
+		&.active {
+			color: var(--base-alpha);
+		}
+	}
+
+	&__icon-home {
+		display: block;
+		flex: 0 0 auto;
+		width: 15px;
+		height: 14px;
+	}
+}

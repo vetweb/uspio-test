@@ -1,0 +1,34 @@
+// базовые подключения
+@import "vars";
+@import "mixins";
+@import "fonts";
+@import "settings";
+@import "typo";
+@import "animations";
+@import "content-box";
+
+// подключения компонентов страницы
+@import "./components/logo";
+@import "./components/btn";
+@import "./components/burger";
+@import "./components/close-btn";
+@import "./components/mobile-menu";
+@import "./components/likes";
+@import "./components/cart";
+@import "./components/info-location";
+@import "./components/location-link";
+@import "./components/order-btn";
+@import "./components/search-header";
+@import "./components/mob-nav-actions";
+@import "./components/breadcrumbs";
+@import "./components/_root-banner";
+@import "./components/socials";
+@import "./components/link-with-icon";
+@import "./components/social-box";
+@import "./components/advantages";
+@import "./components/top-menu";
+@import "./components/content-list";
+@import "./components/slider";
+@import "./components/form";
+@import "./components/header";
+@import "./components/footer";

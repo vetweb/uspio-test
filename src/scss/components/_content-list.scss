@@ -1,0 +1,37 @@
+.content-list-wrapper {
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+
+	@include small-tablet {
+		flex-wrap: nowrap;
+	}
+
+	&__content {
+		width: 100%;
+		margin-bottom: 30px;
+
+		@include small-tablet {
+			flex: 1;
+		}
+	}
+
+	&__img {
+		flex: 0 0 auto;
+		width: 100%;
+
+		@include small-tablet {
+			width: auto;
+			margin-left: 15px;
+		}
+
+		img {
+			width: 100%;
+
+			@include small-tablet {
+				width: 350px;
+			}
+		}
+	}
+}

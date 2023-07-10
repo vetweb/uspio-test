@@ -1,0 +1,31 @@
+.mob-nav-actions {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	height: 70px;
+	background: var(--green);
+
+	@include tablet {
+		display: none;
+	}
+
+	&__wrapper {
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		position: relative;
+	}
+
+	.container {
+		width: 100%;
+	}
+
+	&__search-header {
+		width: 50px;
+		margin-right: 30px;
+	}
+
+	&__search-header-input {
+		padding-right: 125px;
+	}
+}

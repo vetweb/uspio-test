@@ -1,0 +1,41 @@
+.likes {
+	display: flex;
+	align-items: flex-end;
+	position: relative;
+	width: 46px;
+	height: 38px;
+	transform: scale(0.9);
+
+	@include tablet {
+		transform: scale(1);
+	}
+
+	&__icon {
+		display: block;
+		width: 28px;
+		height: 28px;
+		fill: var(--red);
+
+		.svg-icon {
+			height: auto;
+		}
+	}
+
+	&__count {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 23px;
+		height: 23px;
+		border-radius: 50%;
+
+		background: var(--green);
+		font-size: 12px;
+		font-weight: 600;
+		color: var(--light-color);
+	}
+}

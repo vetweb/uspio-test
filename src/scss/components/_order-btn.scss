@@ -1,0 +1,31 @@
+.order-btn {
+	.btn__content {
+		max-width: 102px;
+		font-family: 'Proxima Nova Lt', Arial, sans-serif;
+		font-weight: 600;
+	}
+
+	&__letters {
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		width: 31px;
+		margin-right: 10px;
+		color: var(--green);
+	}
+
+	&__words-big {
+		flex: 0 0 auto;
+		font-size: 16px;
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+
+	&__words-small {
+		flex: 0 0 auto;
+		font-family: 'Proxima Nova Lt', Arial, sans-serif;
+		font-size: 11px;
+		font-weight: 300;
+	}
+}

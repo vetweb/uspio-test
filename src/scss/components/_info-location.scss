@@ -1,0 +1,31 @@
+.info-location {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	align-content: center;
+	flex-wrap: wrap;
+
+	@include tablet {
+		height: 92px;
+		padding-left: 30px;
+		border-left: 1px solid var(--light-gray);
+		line-height: 22px;
+	}
+
+	&__info-top {
+		flex: 0 0 auto;
+		width: 100%;
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+
+	&__info-location {
+		padding-right: 10px;
+		border-right: 1px solid var(--light-gray-2);
+	}
+
+	&__info-count {
+		padding-left: 10px;
+		color: var(--base-alpha);
+	}
+}

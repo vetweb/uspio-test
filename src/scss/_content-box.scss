@@ -1,0 +1,97 @@
+.content-box {
+  h1,.h1 {
+    margin-top: 0;
+    margin-bottom: var(--box-indent);
+
+    @include tablet {
+      margin-bottom: calc(var(--box-indent) * 2);
+    }
+  }
+
+  h3, .h3 {
+    margin-top: 0;
+    margin-bottom: calc(var(--box-indent) / 2);
+
+    @include tablet {
+      margin-bottom: var(--box-indent);
+    }
+  }
+
+  h4, .h4 {
+    margin-top: 0;
+    margin-bottom: var(--box-indent-sm);
+  }
+
+  p {
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
+
+  &__ol,
+  &__ul {
+    padding: 0 0 0 20px;
+    margin: 0;
+    width: 100%;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  &__ol {
+    margin-bottom: 30px;
+  }
+
+  &__buttons {
+    margin-top: 30px;
+  }
+
+
+  &__grid-with-right-img {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    @include small-tablet {
+      flex-wrap: nowrap;
+      align-items: stretch;
+    }
+  }
+
+  &__info {
+    flex: 0 0 auto;
+    padding: 30px 20px 0 20px;
+    width: 100%;
+
+    @include small-tablet {
+      padding: 30px;
+      width: auto;
+      flex: 1;
+    }
+  }
+
+  &__img-right {
+    flex: 0 0 auto;
+    overflow: hidden;
+    width: 100%;
+
+    img {
+      width: 100%;
+    }
+
+    @include small-tablet {
+      flex: 1;
+      width: auto;
+      object-fit: cover;
+
+      img {
+        height: 100%;
+        width: auto;
+      }
+    }
+  }
+
+  .p-custom {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}

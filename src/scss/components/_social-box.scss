@@ -1,0 +1,68 @@
+.social-box {
+	padding: 25px 0;
+	box-shadow: 0 2px 14px 0 rgba(0, 0, 0, 0.1);
+
+	&__wrapper {
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-between;
+		flex-direction: column;
+
+		@include tablet {
+			align-items: center;
+			flex-direction: row;
+		}
+	}
+
+	&__text {
+		margin-bottom: 30px;
+		font-size: 18px;
+		line-height: 22px;
+		font-weight: 700;
+
+		@include tablet {
+			max-width: 240px;
+			margin-right: 15px;
+			margin-bottom: 0;
+		}
+	}
+
+	&__form-box {
+		position: relative;
+		margin-bottom: 30px;
+
+		@include tablet {
+			margin-left: auto;
+			margin-bottom: 0;
+			padding-right: 50px;
+		}
+
+		&:after {
+			@include tablet {
+				position: absolute;
+				content: '';
+				right: 0;
+				top: -25px;
+				width: 1px;
+				height: calc(100% + 50px);
+				background: var(--light-gray);
+			}
+		}
+	}
+
+	&__form {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+
+		@include small-tablet {
+			flex-direction: row;
+		}
+	}
+
+	&__socials {
+		@include tablet {
+			padding-left: 50px;
+		}
+	}
+}

@@ -1,0 +1,42 @@
+.socials {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	&__title {
+		margin-right: 20px;
+		text-transform: uppercase;
+		font-weight: 700;
+
+		@include tablet {
+			margin-right: 40px;
+			max-width: 86px;
+		}
+	}
+
+	&__list {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-right: -15px;
+	}
+
+	&__link {
+		padding-right: 15px;
+	}
+
+	&__icon-wrapper {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 60px;
+		height: 60px;
+		border-radius: 50%;
+		background: var(--light-gray);
+		transition: all .3s ease-in-out;
+
+		&:hover {
+			box-shadow: var(--shadow-gray);
+		}
+	}
+}

@@ -1,0 +1,28 @@
+.slider {
+	overflow: hidden;
+	padding: 12px;
+	margin: -12px;
+
+	&__img-link {
+		display: block;
+		background: #EDEEF0;
+	}
+
+	&__img-wrapper {
+		position: relative;
+		width: 100%;
+		overflow: hidden;
+		margin: 0 auto;
+	}
+
+	&__item {
+		border-radius: 8px;
+		overflow: hidden;
+		box-shadow: var(--shadow-gray);
+		background: var(--light-color);
+	}
+
+	&__content {
+		padding: 25px;
+	}
+}

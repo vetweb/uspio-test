@@ -1,0 +1,20 @@
+.link-with-icon {
+	display: inline-flex;
+	align-items: center;
+	justify-content: flex-start;
+	color: var(--base-alpha);
+	margin-bottom: 10px;
+	transition: color .2s linear;
+
+	&:hover {
+		color: var(--green);
+	}
+	
+	&__icon {
+		display: inline-block;
+		width: 16px;
+		height: 16px;
+		flex: 0 0 auto;
+		margin-right: 14px;
+	}
+}

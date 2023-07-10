@@ -1,0 +1,36 @@
+.cart {
+	position: relative;
+	display: flex;
+	align-items: flex-end;
+	width: 46px;
+	height: 38px;
+	transform: scale(0.9);
+
+	@include tablet {
+		margin-left: 20px;
+		transform: scale(1);
+	}
+
+	&__icon {
+		display: block;
+		width: 29px;
+		height: 28px;
+		fill: var(--base-alpha);
+	}
+
+	&__count {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 23px;
+		height: 23px;
+		border-radius: 50%;
+		background: var(--green);
+		font-size: 12px;
+		font-weight: 600;
+		color: var(--light-color);
+	}
+}
