@@ -25,7 +25,7 @@ const swiper = new Swiper('.js-slider', {
 	loop: true,
 	lazy: true,
 	autoplay: {
-		delay: 1000,
+		delay: 5000,
 		disableOnInteraction: false,
 		pauseOnMouseEnter: true,
 	},

@@ -6,6 +6,12 @@
 	height: 38px;
 	transform: scale(0.9);
 
+	&:hover {
+		.likes__count {
+			transform: scale(1.1,1.1);
+		}
+	}
+
 	@include tablet {
 		transform: scale(1);
 	}
@@ -37,5 +43,7 @@
 		font-size: 12px;
 		font-weight: 600;
 		color: var(--light-color);
+
+		transition: all .2s ease-in-out;
 	}
 }

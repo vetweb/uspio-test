@@ -6,9 +6,6 @@
 	flex-wrap: wrap;
 
 	@include tablet {
-		height: 92px;
-		padding-left: 30px;
-		border-left: 1px solid var(--light-gray);
 		line-height: 22px;
 	}
 

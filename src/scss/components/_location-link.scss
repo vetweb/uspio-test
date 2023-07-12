@@ -2,14 +2,22 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	line-height: 16px;
 	font-weight: 700;
 	color: var(--green);
 	cursor: pointer;
+
+	&:hover {
+		.location-link__icon {
+			transform: scale(1.2,1.2);
+		}
+	}
 
 	&__icon {
 		width: 12px;
 		height: 16px;
 		margin-right: 10px;
 		fill: var(--green);
+		transition: all .2s ease-in-out;
 	}
 }

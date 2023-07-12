@@ -4,6 +4,7 @@
 	height: 70px;
 	background: var(--green);
 	overflow: hidden;
+	z-index: 0;
 
 	@include tablet {
 		display: block;
@@ -42,7 +43,7 @@
 	&__item {
 		flex: 0 0 auto;
 		padding: 0 28px;
-		border-right: 1px solid var(--base-alpha);
+		border-right: 1px solid rgba(55,69,74,.2);
 
 		&:last-child {
 			border: 0;
@@ -52,13 +53,13 @@
 	&__search {
 		flex: 0 0 auto;
 		height: 70px;
-		width: 42px;
+		width: 61px;
 		background: var(--green-dark);
 		z-index: 1;
 	}
 
 	&__link {
-		line-height: 22px;
+		line-height: 30px;
 		color: var(--light-color);
 		border-bottom: 1px solid transparent;
 		transition: border .2s ease-in-out;

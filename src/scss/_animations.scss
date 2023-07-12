@@ -1,7 +1,7 @@
 [data-aos="custom"][data-text-anim] {
-  -webkit-transition: none !important;
-  -o-transition: none !important;
-  transition: none !important;
+  -webkit-transition: none;
+  -o-transition: none;
+  transition: none;
 }
 [data-text-anim].aos-animate {
   animation: clip 1.5s ease forwards;

@@ -8,37 +8,38 @@
 		justify-content: space-between;
 		flex-direction: column;
 
-		@include tablet {
+		@include small-tablet {
 			align-items: center;
 			flex-direction: row;
+			flex-wrap: wrap;
+		}
+
+		@include desktop {
+			justify-content: space-between;
 		}
 	}
 
 	&__text {
-		margin-bottom: 30px;
 		font-size: 18px;
 		line-height: 22px;
 		font-weight: 700;
 
-		@include tablet {
+		@include desktop {
 			max-width: 240px;
 			margin-right: 15px;
-			margin-bottom: 0;
 		}
 	}
 
 	&__form-box {
 		position: relative;
-		margin-bottom: 30px;
 
-		@include tablet {
+		@include desktop {
 			margin-left: auto;
-			margin-bottom: 0;
 			padding-right: 50px;
 		}
 
 		&:after {
-			@include tablet {
+			@include desktop {
 				position: absolute;
 				content: '';
 				right: 0;
@@ -61,7 +62,17 @@
 	}
 
 	&__socials {
-		@include tablet {
+		margin-top: 30px;
+
+		@include small-tablet {
+			flex: 1 0 auto;
+			width: 100%;
+		}
+
+		@include desktop {
+			flex: 0 0 auto;
+			width: auto;
+			margin-top: 0;
 			padding-left: 50px;
 		}
 	}

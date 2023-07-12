@@ -8,7 +8,7 @@
 		text-transform: uppercase;
 		font-weight: 700;
 
-		@include tablet {
+		@include desktop {
 			margin-right: 40px;
 			max-width: 86px;
 		}

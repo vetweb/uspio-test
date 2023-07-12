@@ -118,6 +118,20 @@ a {
 
 .section {
 	margin: 60px 0;
+
+	&--inner {
+		padding: 60px;
+		margin: 0;
+	}
+}
+
+.bg-box {
+	background: var(--light-gray);
+}
+
+.text-important {
+	margin-top: 20px;
+	color: var(--base-alpha);
 }
 
 .js-focus-visible :focus:not(.focus-visible) {
